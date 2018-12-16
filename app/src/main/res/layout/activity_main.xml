@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ir.rojadev.game.hangman.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_face"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:src="@drawable/face_3" />
+
+        <TextView
+            android:id="@+id/txt_word"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Sample Text"
+            android:textColor="#000"
+            android:textSize="32dp"
+            android:typeface="monospace" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_a"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="A"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_b"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="B"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txt_c"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="C"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_d"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="D"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_e"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="E"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_f"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="F"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_g"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="G"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_h"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="H"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_i"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="I"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_j"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="J"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_k"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="K"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_l"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="L"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_n"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="N"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_m"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="M"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_o"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="O"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_p"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="P"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_q"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="Q"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_r"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="R"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_s"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="S"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_t"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="T"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_u"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="U"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_v"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="V"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_w"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="W"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_x"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="X"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_y"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="Y"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_z"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="Z"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    style="@style/LetterButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
